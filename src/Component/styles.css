@@ -67,7 +67,7 @@
   }
   
   .productcard {
-    /* width: 30%; */
+    width: 30%;
     margin: 10px;
   }
   
@@ -107,3 +107,8 @@
   .dropdown-menu{
     left: -119px !important;
   }
+  
+
+.card-subtitle {
+  margin-bottom: 12px !important;
+}
