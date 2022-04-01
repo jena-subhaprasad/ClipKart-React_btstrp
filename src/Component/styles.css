@@ -65,6 +65,13 @@
     position: relative;
     top: 55px;
   }
+  .productContainer {
+    display: flex;
+    width: 78%;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
   
   .productcard {
     width: 30%;
@@ -73,6 +80,8 @@
   
   .summary {
     width: 30%;
+    right: 0;
+
   }
   
   /* Media Queries */
@@ -112,3 +121,14 @@
 .card-subtitle {
   margin-bottom: 12px !important;
 }
+
+
+
+.list-group {
+    
+    width: 67vw !important;}
+
+    .row {
+      justify-content: flex-start;
+      align-items: center;}
+    
