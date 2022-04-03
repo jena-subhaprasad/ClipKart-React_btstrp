@@ -10,17 +10,20 @@ import "./styles.css";
 
 import { CartState } from './utility/Context';
 const Header = () => {
-    const { state: { cart },dispatch } = CartState()
+    const { state: { cart },dispatch,filterdispatch } = CartState()
     return (
         <>
             <Navbar fixed='top' bg='dark' variant='dark' style={{ height: 80 }}>
                 <Container>
                     <Navbar.Brand>
-                        <Link to='/'>ShoppingKart</Link>
+                        <Link to='/'>ClipKart</Link>
                     </Navbar.Brand>
                     {/* search */}
                     <Navbar.Text className='search'>
-                        <FormControl style={{ width: 500 }} className="m-auto" placeholder="Search" />
+                        <FormControl style={{ width: 500 }} className="m-auto" placeholder="Search" onChange={(e)=>{filterdispatch({
+                            type:'bysearch',
+                            payload:e.target.value
+                        })}} />
                     </Navbar.Text>
 
                     <Nav>

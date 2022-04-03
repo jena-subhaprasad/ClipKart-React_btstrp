@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Cart from './Component/Cart';
+import Checkout from './Component/Checkout';
 import Header from './Component/Header';
 import Home from './Component/Home';
 
@@ -13,6 +14,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Home/>} excat></Route>
       <Route path='/cart' element={<Cart/>} ></Route>
+      <Route path='/checkout' element={<Checkout/>}></Route>
     </Routes>
     </BrowserRouter>
     
