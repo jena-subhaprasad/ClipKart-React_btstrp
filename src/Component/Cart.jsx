@@ -17,7 +17,10 @@ const Cart = () => {
   }
   const handlesecondmodal = () => {
     setSecmod(!secmod)
-    console.log(mod)
+    console.log(secmod)
+  }
+  const refresh=()=> {
+    window.location.reload(true);
   }
 
   return (
@@ -103,19 +106,22 @@ const Cart = () => {
           </Modal.Footer>
         </Modal>
 
-        {/* <Modal show={secmod} >
-          <Modal.Header closeButton>
-            <Modal.Title><h2>Order Placed</h2></Modal.Title>
+        <Modal show={secmod} >
+          <Modal.Header >
+            <Modal.Title><h2>Order Placed Successfully</h2></Modal.Title>
           </Modal.Header>
-          <Modal.Body>Thanks For Shopping from Clipkart....!:)</Modal.Body>
+          <Modal.Body><div>Thanks For Shopping from Clipkart....!:)</div>
+          <div>You Shopped Total:₹{cart.reduce((acc, cur) => acc + Number(cur.price) * cur.qty, 0)}</div>
+          <div>Items will delivered withing 5 days</div>
+          </Modal.Body>
           <Modal.Footer>
             <Link to="/">
-              <Button variant="primary" >
+              <Button onClick={refresh} variant="primary" >
                 Shop More
               </Button>
             </Link>
           </Modal.Footer>
-        </Modal> */}
+        </Modal>
 
         {/* ----- */}
       </div>

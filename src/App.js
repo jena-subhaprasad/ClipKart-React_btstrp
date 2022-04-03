@@ -11,8 +11,9 @@ function App() {
     <>
     <BrowserRouter>
     <Header/>
-    <Routes>
-      <Route path='/' element={<Home/>} excat></Route>
+    <Routes>/home
+      <Route path='/' element={<Home/>} ></Route>
+      
       <Route path='/cart' element={<Cart/>} ></Route>
       <Route path='/checkout' element={<Checkout/>}></Route>
     </Routes>
