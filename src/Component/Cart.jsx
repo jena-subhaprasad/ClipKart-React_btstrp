@@ -108,17 +108,17 @@ const Cart = () => {
 
         <Modal show={secmod} >
           <Modal.Header >
-            <Modal.Title><h2>Order Placed Successfully</h2></Modal.Title>
+            <Modal.Title><h2>Order Placed Successfully...!!!</h2></Modal.Title>
           </Modal.Header>
           <Modal.Body><div>Thanks For Shopping from Clipkart....!:)</div>
           <div>You Shopped Total:₹{cart.reduce((acc, cur) => acc + Number(cur.price) * cur.qty, 0)}</div>
           <div>Items will delivered withing 5 days</div>
           </Modal.Body>
           <Modal.Footer>
-            <Link to="/">
-              <Button onClick={refresh} variant="primary" >
+            <Link to="/" onClick={refresh} >
+              {/* <Button onClick={refresh} variant="primary" > */}
                 Shop More
-              </Button>
+              {/* </Button> */}
             </Link>
           </Modal.Footer>
         </Modal>
