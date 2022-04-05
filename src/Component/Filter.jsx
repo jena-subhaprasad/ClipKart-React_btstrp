@@ -10,7 +10,7 @@ console.log(filterstate)
         <span>Filter Product</span>
         <span>
             <Form.Check
-            label="Acending"
+            label="Low to High"
             type='radio'
             name='group1'
             id={`inline-1`}
@@ -24,7 +24,7 @@ console.log(filterstate)
         </span>
         <span>
             <Form.Check
-            label="Decending"
+            label="High to Low"
             type='radio'
             name='group1'
             id={`inline-2`}
