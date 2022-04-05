@@ -115,10 +115,10 @@ const Cart = () => {
           <div>Items will delivered withing 5 days</div>
           </Modal.Body>
           <Modal.Footer>
-            <Link to="/" onClick={refresh} >
-              {/* <Button onClick={refresh} variant="primary" > */}
+            <Link to="/" >
+              <Button onClick={refresh} variant="primary" >
                 Shop More
-              {/* </Button> */}
+              </Button>
             </Link>
           </Modal.Footer>
         </Modal>
