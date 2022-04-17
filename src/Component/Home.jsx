@@ -21,7 +21,7 @@ const Home = () => {
   
      if(filterstate.isfastdelivery){
       mybufferstate=mybufferstate.filter((e)=> e.fastDelivery)
-    }
+    }//return array of fastdeliverryy
     if(!filterstate.instock)
     {
       mybufferstate=mybufferstate.filter((e)=> e.inStock)
