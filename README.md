@@ -1,2 +1,4 @@
 # ClipKart-React_btstrp
-bootstraping a react kart
+bootstraping a react shopping Cart with ReactJs
+
+Hosted on:-https://clipkart-jena-subhaprasad.vercel.app/
